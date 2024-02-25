@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jovian Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="navbar">
+        <a onclick="main_page()">
+        <img id="Navbarlogo"
+            src="https://bookface-images.s3.amazonaws.com/logos/9c630503bfaf09e017d40c97dae09e6521a73c2d.png"
+            alt="Jovian logo">
+        </a>
+
+    </div>
+    <img id="banner"
+        src="https://st.depositphotos.com/8521256/54909/v/600/depositphotos_549093500-stock-video-glitch-the-word-welcome-icon.jpg"
+        , alt="Picture that says welcome">
+
+    <h1>About Jovian</h1>
+    <div id="about">
+        <div id="description">
+            <p id="description_words"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est
+                laborum."
+            </p>
+        </div>
+        <div id="image">
+            <img id="banner2"
+                src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZSUyMHdvcmtpbmclMjBpbiUyMG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D"
+                , alt="Team working together">
+        </div>
+    </div>
+
+    <h2>Job oportunities</h2>
+
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-table-header">
+                <th rowspan="2" width="250px">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2" width="68px">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="Location">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend developer</td>
+                <td>London</td>
+                <td>United Kingdom</td>
+                <td>$70,000</td>
+                <td>March 1st, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack developer</td>
+                <td>Amsterdan</td>
+                <td>Netherlands</td>
+                <td>$92,000</td>
+                <td>February 8th, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>New York</td>
+                <td>United States</td>
+                <td>$84,000</td>
+                <td>August 6th, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Machine Learning Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$79,000</td>
+                <td>October 23rd, 2023</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Submitt your application</h2>
+
+        <form id="application_form">
+            <div>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="John Smith">
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="Jsmith@example.com">
+            </div>
+            <div>
+                <label for="phone_number">Phone Number</label><br>
+                <input type="text" id="phone_number" name="phone_number" required placeholder="+1 3105404578">
+            </div>
+            <div>
+                <label for="gender">Gender</label><br>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+            </div>
+            <div>
+                <label for="DOB">Date of Birth</label><br>
+                <input type="date" id="DOB" name="DOB" required placeholder="+57 310540458">
+            </div>
+            <div>
+                <label for="message">Message</label><br>
+                <textarea maxlength="100" id="message" name="message" rows="5" required placeholder="Explain what makes you suitable for the job"></textarea>
+            </div>
+            <div>
+                <label for="PAF">Position Applied For</label><br>
+                    <select id="PAF" name="Position Applied">
+                        <option value="Frontend Developer">Frontend Developer</option>
+                        <option value="Full Stack Developer">Full Stack Developer</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+                    </select>
+            </div>
+            <div>
+                <label for="CV"> Attach CV</label><br>
+                <input type="file" id="CV" name="CV" required accept=".pdf,doc,.docx" required>
+            </div>
+            <div>
+                <label for="terms">
+                <input type="checkbox" name="terms" id="terms"> I agree to the terms and condition
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit Application">
+            </div>
+            
+        </form>
+
+    </div>
+
+    <div id="footer">
+        <h4 id="footer-links">
+            <a class="link" href="https://www.Instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a class="link" href="https://Youtube.com" target="_blank" rel="noopener">Youtube</a>
+            <a class="link" href="https://www.Facebook.com" target="_blank" rel="noopener">Facebook</a>
+        </h4>
+    </div>
+
+    <script src="function.js"></script>
+    
+</body>
+</html>

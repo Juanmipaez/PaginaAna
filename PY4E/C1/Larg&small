@@ -1,0 +1,28 @@
+largest = None
+smallest = None
+sum = 0
+
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:
+        new_num = int(num)
+        if largest is None:
+            largest = new_num
+        elif new_num > largest:
+            largest = new_num
+        
+        if smallest is None:
+            smallest = new_num
+        elif new_num < smallest:
+            smallest = new_num
+        sum += new_num
+    
+    except:
+        print("Invalid input")
+        continue
+
+print("Maximum is",largest)
+print("Minimum is",smallest)
+print("Sum:",sum)

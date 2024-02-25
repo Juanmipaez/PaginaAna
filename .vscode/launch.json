@@ -1,0 +1,155 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "hola",
+            "request": "launch",
+            "mainClass": "Java_practice.hola",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Car2",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Clases.Clase_3.Car2",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Car",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Clases.Clase_3.Car",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "PersonTester",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Clases.People.PersonTester",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploClase2",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Clases.Clase_2.EjemploClase2",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "EjemploClase1",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Clases.Clase_2.EjemploClase1",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "ReverseString",
+            "request": "launch",
+            "mainClass": "Java_practice.ReverseString",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Second",
+            "request": "launch",
+            "mainClass": "Java_practice.Second",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Main2",
+            "request": "launch",
+            "mainClass": "Java_practice.Main2",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio_prop_17",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Taller_1.Ejercicio_prop_17",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio_prop_14",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Taller_1.Ejercicio_prop_14",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio_prop_12",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Taller_1.Ejercicio_prop_12",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio_resuelto_5",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Taller_1.Ejercicio_resuelto_5",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Ejercicio_resuelto_4",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Taller_1.Ejercicio_resuelto_4",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Numeros_amigos",
+            "request": "launch",
+            "mainClass": "Java_practice.Numeros_amigos",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Perfect_number",
+            "request": "launch",
+            "mainClass": "Java_practice.Perfect_number",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Armstrong_number",
+            "request": "launch",
+            "mainClass": "POO_UNAL.Armstrong_number",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "clase1",
+            "request": "launch",
+            "mainClass": "POO_UNAL.clase1",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Java_practice.Main",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Java_practice.Hello",
+            "projectName": "Code_643dcb5d"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "Java_practice.hello",
+            "projectName": "Code_643dcb5d"
+        }
+    ]
+}
