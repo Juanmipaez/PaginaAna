@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3d4f8;
+    height: 100%;
+}
+
+.falling-heart {
+    pointer-events: none;
+    user-select: none;
+    position: fixed;
+    z-index: -1;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 5em;
+    font-family: 'Parisienne';
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.card {
+    width: 240px;
+    height: 240px;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card.enlarged {
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 10;
+}
+
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background: white;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-back {
+    background: #cad7ed;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 20px;
+    font-size: 0.85em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 90%;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.card-back p {
+    margin: 10px 0;
+    padding: 5px;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 5;
+}
+
+.things-button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    margin: 5px auto;
+    cursor: pointer;
+    font-family: 'Parisienne', cursive;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.things-button:hover {
+    background-color: #ff3366;
+    transform: scale(1.05);
+}
+
+.things-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.things-card {
+    background-color: #cad7ed;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2.5px solid black;
+}
+
+.things-card::-webkit-scrollbar {
+    display: none;
+}
+
+.things-card {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.things-card-content {
+    text-align: center;
+}
+
+.things-list {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.things-list li {
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: #f3d4f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.close-button {
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.close-button:hover {
+    background-color: #ff3366;
+}
