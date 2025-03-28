@@ -207,7 +207,7 @@ h1 {
     overflow-y: auto;
     border: 2.5px solid black;
     -ms-overflow-style: none;
-    overflow: hidden; /* Hide scrollbar for unsupported browsers */
+    
 }
 
 .things-card::-webkit-scrollbar {
