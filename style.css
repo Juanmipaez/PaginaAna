@@ -1,10 +1,24 @@
+/* Global and Body Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f3d4f8;
     height: 100%;
+    overflow: hidden; /* Hides scrollbars across browsers */
+    -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
 }
 
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    overflow: auto;  /* Allows scrolling */
+}
+
+/* Falling Heart Animation */
 .falling-heart {
     pointer-events: none;
     user-select: none;
@@ -12,6 +26,7 @@ body {
     z-index: -1;
 }
 
+/* Typography */
 h1 {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -19,19 +34,35 @@ h1 {
     font-family: 'Parisienne';
 }
 
+/* Gallery Responsive Layout */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
-    margin: 20px auto;
+    gap: 10px;
 }
 
+.gallery img {
+    width: calc(25% - 10px); /* 4 images per row */
+}
+
+/* Responsive Image Grid */
+@media (max-width: 900px) {
+    .gallery img {
+      width: calc(50% - 10px); /* 2 images per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery img {
+      width: calc(100% - 10px); /* 1 image per row */
+    }
+}
+
+/* Card Styles */
 .card {
     width: 240px;
     height: 240px;
-    /* perspective: 1000px; */
     cursor: pointer;
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -46,6 +77,7 @@ h1 {
     align-items: center;
 }
 
+/* Card Flip and Enlarge Interactions */
 .card.flipped .card-inner {
     transform: rotateY(180deg);
     transition: transform 0.6s ease-in-out;
@@ -62,6 +94,7 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Card Sides */
 .card-front, .card-back {
     width: 100%;
     height: 100%;
@@ -115,6 +148,7 @@ h1 {
     word-wrap: break-word;
 }
 
+/* Overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -124,9 +158,9 @@ h1 {
     background: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 5;
-
 }
 
+/* Things Button */
 .things-button {
     background-color: #ff6699;
     color: white;
@@ -147,6 +181,7 @@ h1 {
     transform: scale(1.05);
 }
 
+/* Things Popup */
 .things-popup {
     position: fixed;
     top: 0;
@@ -171,21 +206,19 @@ h1 {
     max-height: 80vh;
     overflow-y: auto;
     border: 2.5px solid black;
+    -ms-overflow-style: none;
+    overflow: hidden; /* Hide scrollbar for unsupported browsers */
 }
 
 .things-card::-webkit-scrollbar {
     display: none;
 }
 
-.things-card {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 .things-card-content {
     text-align: center;
 }
 
+/* Things List */
 .things-list {
     text-align: left;
     margin: 20px auto;
@@ -201,6 +234,7 @@ h1 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Close Button */
 .close-button {
     background-color: #ff6699;
     color: white;
