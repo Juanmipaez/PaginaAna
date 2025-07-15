@@ -14,6 +14,35 @@
     <div id="heart-container"></div>
     <h1>Muchos momentos hasta el día de hoy</h1>
     <button id="things-button" class="things-button">Things I like about you</button>
+
+
+    <div id="message-box" class="message-box">📬 Tienes 1 mensaje nuevo</div>
+    
+    <div id="envelope-animation" class="envelope-animation">
+    <div class="envelope">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <div class="letter">📜</div>
+    </div>
+    </div>
+
+    <div id="message-popup" class="message-popup">
+      <div class="message-list">
+        <h2>📨 Tus mensajes especiales</h2>
+        <ul id="message-items">
+          <!-- JS insertará los mensajes aquí -->
+        </ul>
+        <button onclick="closeMessagePopup()" class="close-button">Cerrar</button>
+      </div>
+    </div>
+    
+    <div id="card-popup" class="card-popup">
+      <div class="card-content">
+        <p id="card-text"></p>
+        <button onclick="closeCardPopup()" class="close-button">Cerrar</button>
+      </div>
+    </div>
+
     <div class="gallery">
         <!-- Image Cards -->
         <div class="card" onclick="flipCard(this)">
